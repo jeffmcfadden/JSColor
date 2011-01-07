@@ -1,3 +1,66 @@
+/*
+Copyright (c) 2011 Jeff McFadden
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Thanks to http://www.csgnetwork.com/csgcolorsel4.html for help/inspiration
+
+
+
+JS Color - A Color Storage/Conversion Library
+
+Easily convert your color between RGB, HSV, and Hex values
+
+For example, you can snag a color and adjust only the hue, keeping saturation and brightness even, to maintain a sort of gradient affect in a color range:
+ var color1 = Color();
+
+ color1.hex( '#74d04c' );
+ 
+ color1.h( color1.h() - 40 );
+ 
+ console.log( color1.hex() );
+
+## Usage
+The following getters/setters are supported. Whenever you set a value the others will be immediately adjusted to match. So if you set the hex, you can grab the RGB or HSV immediately.
+
+RGB values are 0-255
+
+H is 0-360
+
+S and V are 0-100
+
+Hex is #000000 - #FFFFFF and *expects the leading hash*
+
+### Methods
+In all cases passing no value will return the current value.
+
+* r( val )
+* g( val )
+* b( val )
+
+* h( val )
+* s( val )
+* v( val )
+
+* hex( val )
+
+*/
 var Color = function(){
 
     return {

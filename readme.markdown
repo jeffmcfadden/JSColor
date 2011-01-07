@@ -1,7 +1,7 @@
 # JSColor
 A JavaScript library for handling storage of a color and easily converting between Hex, RGB, and HSV
 
-For example, you can snag a color and adjust only the hue, keeping saturation and brightness even, to maintain a sort of gradient affect in a color range:
+For example, you can snag a color and adjust only the hue, keeping saturation and brightness even, to maintain a sort of gradient effect in a color range:
 `var color1 = Color();
 
  color1.hex( '#74d04c' );
